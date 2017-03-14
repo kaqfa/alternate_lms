@@ -5,7 +5,7 @@ from course.models import Content, Course
 
 class Assignment(models.Model):
     creator = models.ForeignKey(Member, related_name="creator")
-    content = models.ForeignKey(Content)
+    content = models.OneToOneField(Content)
     max_point = models.PositiveIntegerField(default=100)
     pass_grade = models.PositiveIntegerField(null=True)
     student_work = models.ManyToManyField(Member, through='StudentWork')
