@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'material',
     'member',
     'post',
+    'assignment',
 )
 
 MIDDLEWARE_CLASSES = (
